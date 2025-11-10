@@ -1,10 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProyectoZ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+      color: #333;
+    }
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 1em 0;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
+    button {
+      background-color: #0078d7;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Bienvenido a ProyectoZ</h1>
-  <p>Esta es mi primera página del proyecto.</p>
+  <header>
+    <h1>Bienvenido a ProyectoZ</h1>
+  </header>
+
+  <main>
+    <p>Esta es mi primera página del proyecto.</p>
+    <button onclick="mostrarMensaje()">Haz clic aquí</button>
+    <p id="mensaje"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 ProyectoZ. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById('mensaje').textContent = '¡Gracias por visitar ProyectoZ!';
+    }
+  </script>
 </body>
 </html>
+
